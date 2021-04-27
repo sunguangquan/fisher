@@ -29,7 +29,12 @@ brand_name = '<p.*?>(\w*)</p>'
 # print(len(brand_items))
 
 
-soup = BeautifulSoup(open('index.html'), 'lxml')
-result = soup.find_all('a')
-for item in result:
-    print(item)
+# soup = BeautifulSoup(open('index.html'), 'lxml')
+# result = soup.find_all('a')
+# for item in result:
+#     print(item)
+
+
+url = "https://api.sephora.cn/v1/product/sku/optionalSkuSpec?productId=991605&skuId=12039165&channel=PC&isPromotion=false"
+r = requests.get(url).json()
+print(r.get('results'))

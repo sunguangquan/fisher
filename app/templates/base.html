@@ -1,0 +1,38 @@
+<!doctype html public="SOA">
+<html>
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="x-ua-compatible" content="ie=edge" />
+    <link type="image/x-icon" href="https://ssl1.sephorastatic.cn/wcsfrontend/members/common/favicon.ico"
+        rel="shortcut icon">
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/main.css')}}"
+        type="text/css" />
+</head>
+<body>
+    <div id=root>
+        <div class="BrandContainer" data-reactroot="" data-reactid="1" data-react-checksum="-133453393">
+            <div id="Top" data-reactid="2"></div>
+            <div id="Search" data-reactid="3">
+                <div class="search-info" data-reactid="4">
+                    <div class="search-info-content clearFix" data-reactid="5">
+                        <div class="search-info-content-logo floatL" data-reactid="6"><a href="/" data-reactid="7"><img
+                                    src="https://ssl1.sephorastatic.cn/soa/pc/images/sep_top_Logo.png" height="40"
+                                    alt="" data-reactid="8" /></a></div>
+                        <div class="search-info-content-searchWrap floatL" data-reactid="9">
+                            <div class="module-search search-info-content-inputBox" data-reactid="10">
+                                <div class="module-search-main" data-reactid="11"><input type="text"
+                                        placeholder="请输入您要搜索的关键词" data-reactid="12" />
+
+                                    <div class="module-search-results" data-reactid="30"></div>
+                                </div>
+                                <div class="module-search-submit" data-reactid="31">搜索</div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div>{% block content %}{% endblock %}</div>
+    </div>
+</body>
+</html>

@@ -5,11 +5,6 @@ name = "pypi"
 
 [packages]
 flask = "*"
-pytest = "*"
-requests = "*"
-beautifulsoup4 = "*"
-flask-sqlalchemy = "*"
-lxml = "*"
 
 [dev-packages]
 
